@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.GenreFilter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: baseline; /* Center items horizontally */
+  background-color: #e5e5e5;
+  box-sizing: border-box;
+  max-width: max-content;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
+}
+
+.GenreFilter .GenreBtn {
+  margin: 0.5rem;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+.FilterBtn{
+  background-color: #cacaca;
+  padding: 8px;
+  border: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
+  border-radius: 4px;
+}
+.moviesData{
+  width: max-content; 
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
+}
+.moviesData tr{
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+.moviesData tr:hover{
+  background-color: #e5e5e56f;
+}
+
+.MovieTable {
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  border-collapse: collapse;
+}
+
+.MovieTable th {
+  background-color: #e5e5e56f;
+  border: 1px solid #e3e3e3;
+  text-align: left;
+  font-weight: 500;
+  padding: .7rem;
+}
+
+.MovieTable tr:first-child td {
+  width: 30%; 
+}
+
+.MovieTable tr:not(:first-child) td {
+  width: 10%; 
+}
+.MovieTable td{
+  padding: 8px; 
+  border: 1px solid #dddddd; 
+  text-align: left;
+}
+
+.firstRow{
+  width: 34vw !important;
+}
+.secondRow{
+  width: 12vw !important;
+}
+.thirdRow{
+  width: 5vw !important;
+}
+
+@media screen and (max-width: 400px), (max-height: 400px) {
+  .GenreFilter,
+  .moviesData {
+    max-width: none;
+    max-height: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .GenreFilter {
+    width: 200vh;
+    background-color: #e5e5e5;
+    padding: 1rem;
+  }
+
+  .MovieTable{
+    width: 200vh;
+  }
+  .moviesData {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    /* width: max-content; */
+  }
+  .heading{
+    width: 100vh;
+    text-align: center;
+  }
+}
